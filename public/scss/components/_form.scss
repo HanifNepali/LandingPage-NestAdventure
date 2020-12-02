@@ -1,0 +1,37 @@
+.form-component {
+  display: inline-block;
+  width: 100%;
+  padding: $form-input-padding-y $form-input-padding-x;
+  height: 4.8rem;
+  border: 1px solid $form-input-border-color;
+  color: darken($form-input-color, 15%);
+  background: $form-input-background;
+  box-shadow: none;
+  outline: none;
+  transition: all 0.3s ease;
+
+  &:focus {
+    border: 1px solid darken($form-input-border-color, 10%);
+    box-shadow: 0 0 8px -1px darken($form-input-border-color, 10%);
+  }
+}
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+::-webkit-input-placeholder {
+  color: $form-input-color;
+}
+
+::-moz-placeholder {
+  color: $form-input-color;
+}
+
+:-ms-input-placeholder {
+  color: $form-input-color;
+}
+
+:-moz-placeholder {
+  color: $gray-300;
+}

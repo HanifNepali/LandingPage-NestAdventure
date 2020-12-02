@@ -1,0 +1,42 @@
+.with-icon {
+  span {
+    display: inline-block;
+    position: relative;
+    padding-left: 3rem;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 2.4rem;
+      height: 2.4rem;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+    span {
+      font-weight: 600;
+      color: $black-100;
+    }
+  }
+}
+
+.with-icon--address {
+  span {
+    &::before {
+      background: url("../assets/images/address.svg") no-repeat center;
+    }
+  }
+}
+.with-icon--clock {
+  span {
+    &::before {
+      background: url("../assets/images/clock.svg") no-repeat center;
+    }
+  }
+}
+.with-icon--dollar {
+  span {
+    &::before {
+      background: url("../assets/images/dollar.svg") no-repeat center;
+    }
+  }
+}

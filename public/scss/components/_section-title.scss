@@ -1,0 +1,17 @@
+.section-title {
+  font-weight: 700;
+
+  &__header {
+    text-transform: uppercase;
+    color: $primary;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 1px;
+    margin-bottom: 0.9rem;
+  }
+  &__sub-header {
+    font-family: $font-family-secondary;
+    line-height: 1.25;
+    color: $black-100;
+  }
+}

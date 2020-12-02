@@ -1,0 +1,71 @@
+.trips {
+  @extend .gutter-md-x;
+  .section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+    @media (min-width: 1200px) {
+      margin-bottom: 6rem;
+    }
+    &__header {
+      color: $green;
+    }
+    &__sub-header {
+      color: $white;
+    }
+  }
+  .table {
+    color: $white;
+    &--responsive {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      @media (min-width: 1480px) {
+        padding: 0 7rem;
+      }
+    }
+    th,
+    td {
+      vertical-align: middle;
+      line-height: 1.11;
+      font-size: 1.8rem;
+    }
+
+    th {
+      padding: 1.7rem 1.7rem 1.7rem 0;
+      font-weight: 600;
+    }
+    td {
+      padding: 0.9rem 0.9rem 0.9rem 0;
+    }
+
+    thead {
+      th {
+        min-width: 12.5rem;
+      }
+    }
+
+    tbody {
+      td {
+        &:first-child {
+          min-width: 12.5rem;
+        }
+        &:nth-child(2) {
+          min-width: 19rem;
+        }
+      }
+    }
+    tr {
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    }
+    tbody {
+      tr {
+        td {
+          &:last-child {
+            text-align: right;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

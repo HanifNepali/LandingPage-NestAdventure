@@ -1,0 +1,57 @@
+.h1,
+h1 {
+  font-size: 4rem;
+
+  @media (min-width: 768px) {
+    font-size: 5.5rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 7rem;
+  }
+}
+
+.h2,
+h2 {
+  font-size: 2.5rem;
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 4rem;
+  }
+}
+
+.h3,
+h3 {
+  font-size: 2rem;
+
+  @media (min-width: 1200px) {
+    font-size: 2.4rem;
+  }
+}
+
+.h4,
+h4 {
+  font-size: 1.8rem;
+
+  @media (min-width: 1200px) {
+    font-size: 2rem;
+  }
+}
+
+.h5,
+h5 {
+  font-size: 1.8rem;
+}
+
+input,
+select,
+textarea {
+  font-family: $font-family-primary;
+  font-size: $form-input-font-size;
+  font-weight: $form-input-font-weight;
+  line-height: $form-input-line-height;
+}

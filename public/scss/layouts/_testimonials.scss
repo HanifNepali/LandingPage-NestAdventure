@@ -1,0 +1,123 @@
+.testimonials {
+  background-color: $green;
+  padding: 5.5rem 0;
+  @media (min-width: 1200px) {
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10rem;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 56%;
+      left: 0;
+      bottom: 0;
+      background-color: $green;
+      z-index: -1;
+    }
+  }
+  .container {
+    max-width: 1580px;
+    margin-right: 0;
+    padding-right: 0;
+    @media (min-width: 1920px) {
+      max-width: 83%;
+    }
+  }
+  .row {
+    @media (min-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0 -1.5rem;
+      position: relative;
+    }
+  }
+  .col {
+    @media (min-width: 1200px) {
+      padding: 0 1.5rem;
+    }
+    &:first-child {
+      @media (min-width: 1200px) {
+        width: 41rem;
+      }
+    }
+    &:last-child {
+      @media (min-width: 1200px) {
+        width: calc(100% - 41rem);
+      }
+    }
+  }
+  .text-wrap {
+    @media (min-width: 1200px) {
+      max-width: 37rem;
+      margin-right: auto;
+      margin-top: -5rem;
+    }
+  }
+  .section-title {
+    @media (max-width: 1200px) {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    &__header {
+      color: $white;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    &__sub-header {
+      color: $white;
+    }
+  }
+  .owl {
+    &-carousel {
+      position: static;
+    }
+    &-stage {
+      padding-left: 0 !important;
+      @media (max-width: 1199px) {
+        margin-bottom: 3rem;
+      }
+      @media (min-width: 1200px) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+      }
+    }
+    &-item {
+      opacity: 0.5;
+      &.active {
+        opacity: 1;
+      }
+    }
+    &-nav {
+      justify-content: center;
+      @media (min-width: 1200px) {
+        position: absolute;
+        left: 1.5rem;
+        bottom: 14rem;
+        justify-content: flex-start;
+      }
+      button {
+        &.owl-prev,
+        &.owl-next {
+          border-color: rgba(255, 255, 255, 0.2) !important;
+          &:hover {
+            border-color: rgba(255, 255, 255, 1) !important;
+          }
+        }
+        &.owl-prev {
+          &::after {
+            background: url("../assets/images/arrow-left-white.svg") no-repeat;
+          }
+        }
+        &.owl-next {
+          &::after {
+            background: url("../assets/images/arrow-right-white.svg") no-repeat;
+          }
+        }
+      }
+    }
+  }
+}

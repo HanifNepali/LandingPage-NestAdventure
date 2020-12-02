@@ -1,0 +1,55 @@
+$white: #ffffff;
+$black: #000000;
+$green: #8ab61e;
+$blue: #0089c9;
+
+$white-100: #f1f1f1;
+$white-200: #eaeaea;
+
+$black-100: #242a3a;
+$black-200: #474747;
+$black-300: #121212;
+$black-400: #18171f;
+
+$gray-100: #b8b8b8;
+$gray-200: #f7f6f0;
+$gray-300: #999999;
+$gray-400: #545454;
+
+$green-100: #18a581;
+
+$primary: $blue;
+$secondary: $green;
+
+$body-color: $black-200;
+$body-bg: $white;
+$link-color: $secondary;
+
+$headings-margin-bottom: 1.5rem;
+$paragraph-margin-bottom: 1.5rem;
+
+$font-family-primary: "Nunito Sans", "Segoe UI", Helvetica, sans-serif;
+$font-family-secondary: "Playfair Display", "Noto Serif", serif;
+$font-size-base: 1.6rem;
+$font-size-lg: 1.8rem;
+$line-height-base: 1.67;
+
+$form-input-color: $gray-300;
+$form-input-font-size: $font-size-base;
+$form-input-padding-x: 1.5rem;
+$form-input-padding-y: 1.2rem;
+$form-input-line-height: 1.375rem;
+$form-input-font-weight: 400;
+$form-input-background: $white;
+$form-input-border-color: $white-100;
+
+$btn-padding-x: 1.7rem;
+$btn-padding-y: 1.5rem;
+$btn-font-weight: 600;
+$btn-line-height: 1;
+$btn-font-size: $font-size-base;
+$btn-sm-padding-x: 1rem;
+$btn-sm-padding-y: 1.2rem;
+$btn-sm-font-size: 1.4rem;
+$btn-outline-border-color: $black-100;
+$btn-outline-color: $black-100;

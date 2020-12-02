@@ -1,0 +1,148 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  .container {
+    max-width: 143.5rem;
+    position: relative;
+  }
+
+  .logo {
+    display: inline-block;
+    background-color: $white;
+    transform: skewX(-10deg);
+    vertical-align: middle;
+    overflow: hidden;
+    max-width: 11rem;
+    @media (min-width: 1440px) {
+      max-width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 1rem;
+    }
+    img {
+      transform: skewX(10deg);
+    }
+  }
+  &__top {
+    display: none;
+    padding: 1rem 0;
+    background-color: $black-100;
+    @media (min-width: 992px) {
+      display: block;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      color: $white;
+      font-size: 1.3rem;
+      line-height: 1.35;
+      @media (min-width: 1200px) {
+        font-size: 1.4rem;
+      }
+    }
+    li {
+      padding: 0 1.4rem;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        border-right: 0;
+        padding-right: 0;
+      }
+    }
+    &__info {
+      @media (min-width: 1440px) {
+        padding-left: 21rem;
+      }
+    }
+    &__contact {
+      a {
+        color: $white;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+  &__bottom {
+    background-color: $black-400;
+    font-size: 1.5rem;
+    line-height: 1.35;
+    @media (min-width: 1440px) {
+      font-size: 1.4rem;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .row {
+      @media (max-width: 1439px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    &__wrapper {
+      @media (min-width: 1440px) {
+        padding-left: 18.5rem;
+      }
+    }
+    &__nav {
+      position: absolute;
+      top: 100%;
+      left: -100%;
+      width: 100%;
+      padding: 1rem 0;
+      background-color: $black-400;
+      border: 1px solid transparent;
+      transition: all 0.5s ease-in-out;
+      @media (min-width: 1440px) {
+        position: static;
+        background-color: transparent;
+        width: auto;
+        padding: 0;
+      }
+
+      &.nav-toggle {
+        border-top-color: rgba(255, 255, 255, 0.2);
+        left: 0;
+        @media (min-width: 1440px) {
+          border: none;
+        }
+      }
+      .navbar {
+        @media (min-width: 1440px) {
+          display: flex;
+          align-items: center;
+        }
+      }
+      li {
+        color: $white;
+      }
+      a {
+        display: block;
+        padding: 1rem 1.5rem;
+        color: $white;
+        @media (min-width: 1440px) {
+          display: inline-block;
+          padding: 2.1rem 2.6rem;
+        }
+        &:hover {
+          color: $blue;
+          text-decoration: none;
+          background-color: rgba(0, 0, 0, 0.8);
+          @media (min-width: 1440px) {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
